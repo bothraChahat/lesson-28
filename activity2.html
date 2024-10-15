@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, 
+    initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Error Handling In JS</h3>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        try{
+            var sum=add(5,5);
+            document.getElementById("p1").innerHTML=sum;
+
+        }
+        catch(e){
+            document.getElementById("p2").innerHTML=e.message;
+        }
+    </script>
+</body>
+</html>
